@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Page</title>
+</head>
+<body>
+<center>
+    <h1>Input Page</h1>
+    <form method="post">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>
+                    <label>s_length </label>
+                </td>
+                <td>
+                    <input type="text" name="s_length">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>s_width</label>
+                </td>
+                <td>
+                    <input type="text" name="s_width">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>p_length </label>
+                </td>
+                <td>
+                    <input type="text" name="p_length">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>p_width</label>
+                </td>
+                <td>
+                    <input type="text" name="p_width">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>target</label>
+                </td>
+                <td>
+                    <input type="text" name="target">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>species </label>
+                </td>
+                <td>
+                    <input type="text" name="species">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="save">
+                </td>
+            </tr>
+        </table>
+    </form>
+</center>
+
+</body>
+</html>

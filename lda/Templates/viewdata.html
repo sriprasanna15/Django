@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LdaData</title>
+</head>
+<body>
+<h1>Welcome Admin</h1>
+<center>
+<h2>LDA Data</h2>
+    <table>
+        <tr>
+            <th><h3>s_length </h3></th>
+            <th><h3>s_width </h3></th>
+            <th><h3>p_length </h3></th>
+            <th><h3>p_width </h3></th>
+            <th><h3>target </h3></th>
+            <th><h3>species</h3></th>
+        </tr>
+        {% for i in value %}
+        <tr>
+            <td><h4>{{i.s_length}}</h4></td>
+            <td><h4>{{i.s_width}}</h4></td>
+            <td><h4>{{i.p_length}}</h4></td>
+            <td><h4>{{i.p_width}}</h4></td>
+            <td><h4>{{i.target}}</h4></td>
+            <td><h4>{{i.species}}</h4></td>
+        </tr>
+        {% endfor %}
+
+    </table>
+</center>
+
+</body>
+</html>
